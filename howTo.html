@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Load CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Lotto Generator</title>
+</head>
+<body onscroll="scrollUp()">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" data-toggle="collapse" class="navbar-toggle" data-target="#lottoNav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./images/lottoLogo.png" alt="Lotto Ball" id="logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="lottoNav">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="./howTo.html">How to Play</a></li>
+                    <li><a href="./ticket.html">Ticket Generator</a></li>
+                    <li><a href="./winningTicket.html">Feeling Lucky</a></li>
+                </ul>
+            </div>
+        </div>  
+    </nav>
+    <div class="container-fluid">
+        <div class="jumbotron title-header">
+            <h1>Play with as little as <span class="dollar-symbol">$1.00<sup>*</sup></span></h1>
+            
+            <p>*Super Lotto tickets are the only one's purchasable for $1.00</p>
+        </div>
+    </div>
+    <div class="container how-to-body">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                  <h1>Step 1: Find a store near you</h1>
+            </div>
+            <div class="panel-body">
+                    <p>There are plenty of stores that sell lottery tickets. These of which include:</p>
+              <ul>
+                  <li>Convienance Stores</li>
+                  <li>Gas Stations</li>
+                  <li>Liquor Stores</li>
+                  <li>Grocery Stores</li>
+              </ul>
+            </div>
+          </div>
+        <div class="panel panel-primary heading">
+            <div class="panel-heading">
+                <h1>Step 2: Pick Your Numbers</h1>
+            </div>
+            <div class="panel-body">
+                <p>Next, choose five white ball numbers and one "red" ball number.</p>
+                <p>Depending on the type of lotto you choose, the requirements on which numbers can be chosen will vary.</p>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">PowerBall</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                            <p>
+                                Players can choose 5 (white ball) numbers from 1 to 69 and 1 PowerBall® number 
+                                from 1 and 27. Choose your numbers using the play slip or ask the 
+                                cashier to have the numbers randomly generated for you. 
+                            </p>
+                            <i>PowerBall® tickets cost $2.00 per play.</i>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Mega Millions</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                            <p>
+                                Players can choose 5 (white ball) numbers between 1 and 70 and 1 Mega from 1 to 25. 
+                                The numbers can also be randomly generated if the player would like to select the 
+                                Quick Pick® option.
+                            </p>
+                            <i>Mega Millions® tickets cost $2.00 per play.</i>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Super Lotto</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                            <p>
+                                Players can choose 5 (white ball) numbers between 1 and 47 and 1 Mega number between
+                                1 and 27. They may also randomly select numbers by selecting Quick Pick®,
+                                which will randomly choose the numbers for you.
+                            </p>
+                            <i>Super Lotto® tickets cost $1.00 per play.</i>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h1>Step 3: Wait For the Drawing Date</h1>
+            </div>
+            <div class="panel-body">
+                <p>Once you have purchased your ticket(s), look out for the ticket's drawing date.
+                    At the time of the drawing, the winning numbers will be displayed on the ticket's website.
+                    This is where you will check to see if the numbers you've picked match those of the winning
+                    ticket's.
+                </p>
+                <div class="button-block">
+                    <a href="http://powerball.com/games/home" target="_blank" class="lotto-power">PowerBall</a>
+                    <a href="https://www.calottery.com/draw-games/superlotto-plus" target="_blank" class="lotto-super">Super Lotto</a>
+                    <a href="https://www.megamillions.com/" target="_blank" class="lotto-mega">Mega Millions</a>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h1>Step 4: Check Your Rewards</h1>
+            </div>
+            <div class="panel-body">
+                <p> If you happen to match at least one of your numbers with that of the winning ticket's numbers, you may be elligible for a prize
+                    reward. Prizes may vary based on the type of ticket you've bought. Please view panels below to see the respective reward based on 
+                    number of matches.
+                </p>
+                <div class="rewards">
+                    <a href="./images/powerBall-winnings.png" target="_blank">
+                        <img src="./images/powerBall-winnings.png" alt="Powerball Rewards">
+                    </a>
+                    <a href="./images/lotto-winnings.png" target="_blank">
+                        <img src="./images/lotto-winnings.png" alt="Super Lotto Rewards">
+                    </a>
+                    <a href="./images/mega-winnings.png" target="_blank">
+                        <img src="./images/mega-winnings.png" alt="Mega Millions Rewards">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a onclick="returnToTop()" class="btn btn-info btn-lg" id="back-to-top">
+        <span class="glyphicon glyphicon-arrow-up"></span> Return to top
+    </a>
+    <footer>
+        2022 Bryan Chan | All Rights Reserved.
+    </footer>
+    <script src="ticketGenerator.js"></script>
+    <script src="returnToTop.js"></script>
+</body>
+</html>

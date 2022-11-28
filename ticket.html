@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Load CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Lotto Generator</title>
+</head>
+<body onscroll="scrollUp()">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" data-toggle="collapse" class="navbar-toggle" data-target="#lottoNav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./images/lottoLogo.png" alt="Lotto Ball" id="logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="lottoNav">
+                <ul class="nav navbar-nav">
+                    <li><a href="./howTo.html">How to Play</a></li>
+                    <li class="active"><a href="./ticket.html">Ticket Generator</a></li>
+                    <li><a href="./winningTicket.html">Feeling Lucky</a></li>
+                </ul>
+            </div>
+        </div>  
+    </nav>
+    <div class="container-fluid">
+        <div class="jumbotron title-header">
+            <h1>Ticket Generator</h1>
+            <h3>Just click the "Generate" button below to create a randomized lotto ticket!</h3>
+        </div>
+    </div>
+    <div class="container">
+        <div id="lotto">
+            <div class="ticket-number">
+                Ticket 1:
+                <div class="ticket-set">
+                    <p class="white-ball">0</p>
+                    <p class="white-ball">0</p>
+                    <p class="white-ball">0</p>
+                    <p class="white-ball">0</p>
+                    <p class="white-ball">0</p>
+                    <p class="red-ball">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading"></div>
+            <div class="panel-body text-center button-block">
+                <button class="generateTicket" type="button" onclick="generateValues(1)">1 Ticket</button>
+                <button class="generateTicket" type="button" onclick="generateValues(5)">5 Tickets</button>
+                <button class="generateTicket" type="button" onclick="generateValues(10)">10 Tickets</button>
+            </div>
+        </div>
+    </div>
+    <a onclick="returnToTop()" class="btn btn-info btn-lg" id="back-to-top">
+        <span class="glyphicon glyphicon-arrow-up"></span> Return to top
+    </a>
+    <footer>
+        2022 Bryan Chan | All Rights Reserved.
+    </footer>
+    <script src="ticketGenerator.js"></script>
+    <script src="returnToTop.js"></script>
+</body>
+</html>
