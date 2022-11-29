@@ -1,5 +1,5 @@
 //Max value for white ball
-const whiteBallMax = 70;
+const whiteBallMax = 69;
 //Min value for white ball
 const whiteBallMin = 1;
 
@@ -103,7 +103,7 @@ function winningTicket() {
     let redBallNumbers = [];
 
     //The number of white balls that can be chosen 
-    const whiteBalls = 70; 
+    const whiteBalls = 69; 
 
     //Initialize empty array to be used later as a 2D array.
     let lottoTickets = [];
